@@ -18,22 +18,22 @@
         </a-entity>
 
         <!-- Navigasi (Titik Poin) -->
-        <a-entity gltf-model="poin/p1.glb" position="1.860 1.028 -4.226" scale="0.150 0.150 0.150"
+        <a-entity gltf-model="asset/poin/p1.glb" position="1.860 1.028 -4.226" scale="0.150 0.150 0.150"
             class="clickable" onclick="moveTo(1.860, 1.028, -4.226)"
             animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing: linear">
         </a-entity>
 
-        <a-entity gltf-model="poin/p1.glb" position="11.194 1.600 -1.397" scale="0.150 0.150 0.150"
+        <a-entity gltf-model="asset/poin/p1.glb" position="11.194 1.600 -1.397" scale="0.150 0.150 0.150"
             class="clickable" onclick="moveTo(11.194, 1.600, -1.397)"
             animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing: linear">
         </a-entity>
 
-        <a-entity gltf-model="poin/p1.glb" position="1.077 1.028 -9.004" scale="0.150 0.150 0.150"
+        <a-entity gltf-model="asset/poin/p1.glb" position="1.077 1.028 -9.004" scale="0.150 0.150 0.150"
             class="clickable" onclick="moveTo(1.077, 1.028, -9.004)"
             animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing: linear">
         </a-entity>
 
-        <a-entity gltf-model="poin/p1.glb" position="5.092 1.028 -9.004" scale="0.150 0.150 0.150"
+        <a-entity gltf-model="asset/poin/p1.glb" position="5.092 1.028 -9.004" scale="0.150 0.150 0.150"
             class="clickable" onclick="moveTo(5.092, 1.028, -9.004)"
             animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 2000; easing: linear">
         </a-entity>
@@ -46,7 +46,7 @@
         </a-box>
 
       <a-entity id="clone-cube1"
-        gltf-model="artefak/phinisi.glb" 
+        gltf-model="asset/artefak/phinisi.glb" 
         position="2.052 1.770 -3.090"
         scale="0 0 0"
         rotation="-1.984 170.492 2.630"
@@ -58,12 +58,12 @@
 
         <!-- Panel Deskripsi phinisi -->
       <a-entity id="desc-cube1" 
-        gltf-model="penjelasan/Phinisi.glb" 
+        gltf-model="asset/penjelasan/Phinisi.glb" 
         position="3.980 1.785 -3.347" 
         scale="0 0 0" 
         rotation="89.946 -0.023 137.127"
         visible="false"
-        sound="src: url(suara/penjelasanp.mp3); autoplay: false"
+        sound="src: url(asset/suara/penjelasanp.mp3); autoplay: false"
         animation__appear="property: scale; to: 0.250 0.250 0.250; dur: 500; startEvents: showText"
         animation__disappear="property: scale; to: 0 0 0; dur: 500; startEvents: hideText">
       </a-entity>
@@ -76,7 +76,7 @@
     </a-box>
 
     <a-entity id="clone-cube2"
-        gltf-model="artefak/katana.glb" 
+        gltf-model="asset/artefak/katana.glb" 
         position="5.145 2.318 -10.170"
         scale="0 0 0"
         rotation="-18.033 -171.859 -89.731"
@@ -88,11 +88,11 @@
     
       <!-- Panel Deskripsi katana-->
     <a-entity id="desc-cube2" 
-      gltf-model="penjelasan/katana.glb" 
+      gltf-model="asset/penjelasan/katana.glb" 
       position="5.984 2.219 -10.612" 
       scale="0 0 0" 
       visible="false"
-      sound="src: url(suara/penjelasank.mp3); autoplay: false"
+      sound="src: url(asset/suara/penjelasank.mp3); autoplay: false"
       rotation="89.624 -79.422 -42.873"
       animation__appear="property: scale; to: 0.250 0.250 0.250 ; dur: 500; startEvents: showText"
       animation__disappear="property: scale; to: 0 0 0; dur: 500; startEvents: hideText">
@@ -106,7 +106,7 @@
    </a-box>
    
     <a-entity id="clone-cube3"
-        gltf-model="artefak/musket.glb" 
+        gltf-model="asset/artefak/musket.glb" 
         position="4.107 1.318 -10.441"
         scale="0 0 0"
         rotation="-0.732 -91.324 8.727"
@@ -118,11 +118,11 @@
 
     <!-- Panel Deskripsi senapan-->
     <a-entity id="desc-cube3" 
-      gltf-model="penjelasan/senapanvoc.glb" 
+      gltf-model="asset/penjelasan/senapanvoc.glb" 
       position="2.269 1.801 -9.941"
       visible="false"
       scale="0 0 0"
-      sound="src: url(suara/penjelasans.mp3); autoplay: false"
+      sound="src: url(asset/suara/penjelasans.mp3); autoplay: false"
       rotation="89.624 -10.460 -42.873"
       animation__appear="property: scale; to: 0.250 0.250 0.250 ; dur: 500; startEvents: showText"
       animation__disappear="property: scale; to: 0 0 0; dur: 500; startEvents: hideText">
@@ -135,7 +135,7 @@
    </a-box>
   
    <a-entity id="clone-cube4"
-      gltf-model="artefak/keris.glb" 
+      gltf-model="asset/artefak/keris.glb" 
       position="1.852 2.111 -10.240"
       scale="0 0 0"
       rotation="-76.564 168.803 80.160"
@@ -147,10 +147,10 @@
   
     <!-- Panel Deskripsi kris-->
     <a-entity id="desc-cube4" 
-      gltf-model="penjelasan/kris.glb" 
+      gltf-model="asset/penjelasan/kris.glb" 
       position="0.152 1.980 -10.038"
       visible="false"
-      sound="src: url(suara/penjelasankr.mp3); autoplay: false"
+      sound="src: url(asset/suara/penjelasankr.mp3); autoplay: false"
       scale="0 0 0" 
       rotation="89.624 -10.460 -42.873"
       animation__appear="property: scale; to: 0.250 0.250 0.250 ; dur: 500; startEvents: showText"
