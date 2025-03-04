@@ -1,8 +1,6 @@
 // Fungsi untuk memulai VR
-document.getElementById('start-button').addEventListener('click', function() {
-    document.getElementById('start-screen').style.display = 'none';
-    document.getElementById('vr-scene').style.display = 'block';
-});
+let startBtn = document.getElementById('start-button');
+console.log(startBtn); // Harusnya tidak null
 
 function showDescription(objId) {
     let desc = document.getElementById('desc-' + objId);
