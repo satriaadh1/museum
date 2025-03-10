@@ -6,6 +6,7 @@
     <title>Virtual Tour 3D - Museum Nekara</title>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/diarmidmackenzie/aframe-touch-controls@master/touch-controls.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -156,13 +157,14 @@
       animation__appear="property: scale; to: 0.250 0.250 0.250 ; dur: 500; startEvents: showText"
       animation__disappear="property: scale; to: 0 0 0; dur: 500; startEvents: hideText">
    </a-entity>
-        <!-- Kamera VR -->
-        <a-entity id="cameraRig" position="11.194 1.600 -9.178">
-            <a-camera wasd-controls look-controls>
-                <a-cursor color="red"></a-cursor>
-            </a-camera>
-        </a-entity>
-    </a-scene>
+   
+   <a-entity id="cameraRig" position="11.194 1.600 -9.178">
+    <a-camera look-controls="touchEnabled: true" fov="75">
+        <a-entity id="left-eye" stereo="eye: left" position="-0.032 0 0"></a-entity>
+        <a-entity id="right-eye" stereo="eye: right" position="0.032 0 0"></a-entity>
+        <a-cursor color="red"></a-cursor>
+    </a-camera>
+</a-entity>
 
     <script src="script.js"></script>
 </body>
